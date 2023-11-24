@@ -17,13 +17,15 @@
     <div class="container">
         <nav>
             <span class="logo">Larry</span>
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>CS Undergrad @ Cornell Engineering</p>
@@ -36,7 +38,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/user.png">
+                <img src="images/phone-background.png">
             </div>
             <div class="about-col-2">
                 <h1 class="subtitle">About Me</h1>
@@ -74,7 +76,7 @@
  <!-- -----------portfolio-------- -->
  <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Portfolio</h1>
+        <h1 class="subtitle">My Portfolio</h1>
         <div class="work-list">
             <div class="work">
                 <img src="images/work-1.png">
@@ -107,7 +109,7 @@
  <!-- --------------services------------- -->
  <div id="services">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
+        <h1 class="subtitle">My Services</h1>
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-code"></i>
@@ -135,7 +137,7 @@
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
+                <h1 class="subtitle">Contact Me</h1>
                 <p><i class="fa-solid fa-paper-plane"></i> ltt28@cornell.edu</p>
                 <p><i class="fa-solid fa-square-phone"></i> 347-989-6378</p>
                 <div class="social-icons">
@@ -191,6 +193,17 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
   </script>
 </body>
 </html>
