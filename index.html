@@ -12,10 +12,11 @@
     <script src="https://kit.fontawesome.com/c7a069ffdb.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- --------------------header---------- -->
  <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.png" class="logo">
+            <span class="logo">Larry</span>
             <ul>
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -29,7 +30,8 @@
             <h1>Hi, I'm <span>Larry</span><br> Tao</h1>
         </div>
     </div>
- </div>   
+ </div>
+ <!-- -----------------about-------------    -->
  <div id="about">
     <div class="container">
         <div class="row">
@@ -41,14 +43,15 @@
                 <p>I am a motivated and ... student.... </p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links active-link" onmouseenter="opentab('skills')">Skills</p>
+                    <p class="tab-links" onmouseenter="opentab('experience')">Experience</p>
+                    <p class="tab-links" onmouseenter="opentab('education')">Education</p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Frontend</span> <br> Designing Websites</li>
-                        <li><span>Backend</span> <br> Designing Backend APIs</li>
+                        <li><span>Frontend</span> <br> Web Design with HTML, CSS, JS</li>
+                        <li><span>Backend</span> <br> Building APIS with Python, JS, SQL</li>
+                        <li><span>Other</span> <br> Java, Scala, Unity, Swift</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
@@ -68,31 +71,6 @@
         </div>
     </div>
  </div>
- <div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>etc etc etc</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-mobile"></i>
-                <h2>App Design</h2>
-                <p>etc etc etc</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-pencil"></i>
-                <h2>UI/UX</h2>
-                <p>etc etc etc</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
- </div>
  <!-- -----------portfolio-------- -->
  <div id="portfolio">
     <div class="container">
@@ -103,7 +81,7 @@
                 <div class="layer">
                     <h3>Political Discussion App</h3>
                     <p></p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://devpost.com/software/polarity-gfe6ar" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -111,19 +89,45 @@
                 <div class="layer">
                     <h3>Grocery Webscraper</h3>
                     <p></p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://devpost.com/software/shop-simply-eb5gsi" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-3.png">
+                <img src="images/work-3.jpg">
                 <div class="layer">
                     <h3>Lost and Found</h3>
                     <p></p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://github.com/larrytao05/hack-challenge" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="https://github.com/larrytao05" target="_blank" class="btn">See more</a>
+    </div>
+ </div>
+ <!-- --------------services------------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <!-- <p>etc etc etc</p> -->
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile"></i>
+                <h2>App Design</h2>
+                <!-- <p>etc etc etc</p> -->
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-pencil"></i>
+                <h2>UI/UX</h2>
+                <!-- <p>etc etc etc</p> -->
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+        </div>
     </div>
  </div>
  <!-- ---------------contact---------------- -->
@@ -135,10 +139,10 @@
                 <p><i class="fa-solid fa-paper-plane"></i> ltt28@cornell.edu</p>
                 <p><i class="fa-solid fa-square-phone"></i> 347-989-6378</p>
                 <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/larry-tao-29a467290/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/tarrylao/"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                <a href="resources/Resume No Summary - Larry Tao.pdf" download class="btn btn2">Download CV</a>
+                <a href="resources/Resume No Summary - Larry Tao.pdf" download class="btn btn2">Download Resume</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
