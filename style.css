@@ -157,6 +157,17 @@ nav ul li a:hover::after{
     font-size: 14px;
 }
 
+.dot{
+    list-style: none;
+    font-size: 14px;
+}
+
+.dot > li:before{
+    display: inline-block;
+    content: "-";
+    width: 1em;
+}
+
 .tab-contents{
     display: none;
 }
